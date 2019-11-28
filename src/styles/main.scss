@@ -21,7 +21,7 @@ body {
     padding-top: 20px;
 
     &-left {
-      background-color: #fbf6e1;
+      background: linear-gradient(90deg, #e9f1d3, #fbf6e1);
       position: absolute;
       left: 0;
       top: 45%;
@@ -30,7 +30,7 @@ body {
 
     &-right {
       color: #fff;
-      background-color: rgb(110, 212, 110);
+      background: linear-gradient(90deg, rgb(110, 212, 110),#85da81);
       position: absolute;
       right: 0;
       top: 45%;
