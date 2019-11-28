@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.css">
-  </head>
-  <body>
-    <img src="./images/logo.svg" alt="Logo">
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casino</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+  <section class="home">
+    <div class="home__text">
+      <div class="home__text-block home__text-block-left">
+        Hi, I'm a rigth block. <br>
+        You're Pro
+      </div>
+      <div class="home__text-block home__text-block-right">
+        Hi, I'm a left block. <br>
+        You're Awesome
+      </div>
+    </div>
+    <a href="#" class="home__btn" id="homeBtn">
+      Click me
+    </a>
+  </section>
+  <section class="casino">
+    <div class="casino__grats" id="grats">
+      !!JACKPOT!!
+    </div>
+    <div class="casino__inner">
+      <ul class="casino__machine" id="machine1">
+        <li class="casino__slot casino__slot1"></li>
+        <li class="casino__slot casino__slot2"></li>
+        <li class="casino__slot casino__slot3"></li>
+        <li class="casino__slot casino__slot4"></li>
+        <li class="casino__slot casino__slot5"></li>
+      </ul>
+
+      <ul class="casino__machine" id="machine2">
+        <li class="casino__slot casino__slot1"></li>
+        <li class="casino__slot casino__slot2"></li>
+        <li class="casino__slot casino__slot3"></li>
+        <li class="casino__slot casino__slot4"></li>
+        <li class="casino__slot casino__slot5"></li>
+      </ul>
+
+      <ul class="casino__machine" id="machine3">
+        <li class="casino__slot casino__slot1"></li>
+        <li class="casino__slot casino__slot2"></li>
+        <li class="casino__slot casino__slot3"></li>
+        <li class="casino__slot casino__slot4"></li>
+        <li class="casino__slot casino__slot5"></li>
+      </ul>
+    </div>
+    <button  class="casino__btn" id="casinoBtn">
+      Let's Play
+    </button>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://josex2r.github.io/jQuery-SlotMachine/dist/slotmachine.min.js"></script>
+  <script src="https://josex2r.github.io/jQuery-SlotMachine/dist/jquery.slotmachine.min.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+
 </html>

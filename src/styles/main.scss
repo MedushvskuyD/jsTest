@@ -1,3 +1,184 @@
 body {
-  background: greenyellow;
+  padding: 0;
+  margin: 0;
+}
+
+.home {
+  height: 100vh;
+  background: linear-gradient(90deg, rgb(110, 212, 110), #fbf6e1);
+
+  &__text {
+    height: 100vh;
+    position: relative;
+  }
+
+  &__text-block {
+    display: none;
+    box-sizing: border-box;
+    width: 15%;
+    height: 100px;
+    text-align: center;
+    padding-top: 20px;
+
+    &-left {
+      background-color: #fbf6e1;
+      position: absolute;
+      left: 0;
+      top: 45%;
+      animation: right 3s forwards;
+    }
+
+    &-right {
+      color: #fff;
+      background-color: rgb(110, 212, 110);
+      position: absolute;
+      right: 0;
+      top: 45%;
+      animation: left 3s forwards;
+    }
+  }
+
+  &__btn {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    width: 150px;
+    border: 1px solid #fbf6e1;
+    background-color: rgb(110, 212, 110);
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.casino {
+  position: relative;
+  height: 100vh;
+  background-color: #efafb9;
+  background-image: url(../images/machine.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__grats {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 35px;
+    color: #fff;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    margin-right: 63px;
+    padding-top: 440px;
+  }
+
+  &__machine {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  &__slot {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #efafb9;
+    background-color: #fff;
+
+    &1 {
+      background-image: url(../images/slot1.png);
+    }
+
+    &2 {
+      background-image: url(../images/slot2.png);
+    }
+
+    &3 {
+      background-image: url(../images/slot3.png);
+    }
+
+    &4 {
+      background-image: url(../images/slot4.png);
+    }
+
+    &5 {
+      background-image: url(../images/slot6.png);
+      background-size: cover;
+    }
+
+  }
+
+  &__btn {
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    width: 150px;
+    border: 1px solid #fbf6e1;
+    background-color: #ee4e73;
+    margin: 0 auto;
+    outline-color: #d14f77;
+
+    &:disabled {
+      cursor: default;
+      background-color: #efafb9;
+    }
+  }
+}
+
+@keyframes left {
+  20% {
+    top: 53%;
+    right: 0;
+  }
+
+  80% {
+    top: 53%;
+    right: 85%;
+  }
+
+  100% {
+    top: 45%;
+    right: 85%;
+  }
+}
+
+@keyframes right {
+  20% {
+    top: 37%;
+    left: 0;
+  }
+
+  80% {
+    top: 37%;
+    left: 85%;
+  }
+
+  100% {
+    top: 45%;
+    left: 85%;
+  }
 }
