@@ -18,7 +18,8 @@ body {
     text-align: center;
     padding-top: 20px; }
     .home__text-block-left {
-      background-color: #fbf6e1;
+      background: -webkit-gradient(linear, left top, right top, from(#e9f1d3), to(#fbf6e1));
+      background: linear-gradient(90deg, #e9f1d3, #fbf6e1);
       position: absolute;
       left: 0;
       top: 45%;
@@ -26,7 +27,8 @@ body {
               animation: right 3s forwards; }
     .home__text-block-right {
       color: #fff;
-      background-color: #6ed46e;
+      background: -webkit-gradient(linear, left top, right top, from(#6ed46e), to(#85da81));
+      background: linear-gradient(90deg, #6ed46e, #85da81);
       position: absolute;
       right: 0;
       top: 45%;
