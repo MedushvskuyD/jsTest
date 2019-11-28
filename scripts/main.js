@@ -7,6 +7,10 @@ $(document).ready(function() {
     setTimeout(() => {
       $('html, body').animate({ scrollTop: $('.casino').offset().top }, 1000);
     }, 3000);
+
+    setTimeout(() => {
+      $('.home__text-block').fadeOut('slow');
+    }, 3000);
   });
 
   const machine1 = $('#machine1').slotMachine({
